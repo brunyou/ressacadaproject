@@ -1,0 +1,450 @@
+*
+{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;    
+}
+body
+{
+    font-family: 'Oswald', sans-serif;
+    color: #000;
+    overflow-x:hidden;
+    
+}
+
+h1,h2,h3
+{
+    font-family: 'Oswald', sans-serif;
+    color: #000;
+}
+
+nav
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background: #000;
+    justify-content: space-between;
+}
+
+nav > a 
+{
+    text-decoration: none;
+    color: #000;
+    font-weight: 800;
+    font-size: 40px;
+    font-family: 'Oswald', serif;
+    
+}
+nav ul
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    width:100%;
+}
+
+nav ul li
+{
+    text-align: center;
+    width: 100%;
+}
+nav ul li a
+{
+    display: inline-block;
+    padding: 10px;
+    width:100%;
+    text-decoration: none;
+    color:#fff;
+    margin-right:35px;
+
+}
+.burger div
+{
+    width:25px;
+    height:5px;
+    background-color: #fff;
+    margin:5px;
+}
+.burger
+{
+    display:none;
+}
+.burger
+{
+    position:absolute;
+    top:0;
+    right:0;
+    
+}
+
+#background
+{
+    min-width: 100%;
+    min-height: 100%;
+    width:auto;
+    height:auto;
+    background:cover;
+}
+#transparente
+{
+    position:absolute;
+}
+#content
+{
+    position:absolute;
+    padding: 10px;
+    text-shadow: #000 1px 1px 1px;
+    font-family:'Oswald';
+}
+#logo
+{
+    width: 40%;
+    position: absolute;
+    top:10px;
+    left:0;
+}
+#SOBRE
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding:10px 10px 20px 20px;
+    background-color: #000;
+    color: #fff;
+    margin-bottom:20px;
+    transition: 0.5s ease-in;
+}
+
+#SOBRE h2 
+{
+    color: #000;
+    text-shadow: #000 1px 1px 1px;
+    font-family:'Oswald';
+    font-size:30px;
+    background-color: white;
+    margin-bottom:30px;
+}
+#SOBRE p
+{
+    margin-bottom: 2.5em;
+    max-width:1000px;
+    text-shadow: #000 1px 1px 1px;
+    font-family:'Oswald';
+    font-size:25px;
+}
+header
+{
+    width: 100%;
+    height:30vh;
+    margin:0;
+    margin-top:15%;
+}
+.caixascartas
+{
+    position:relative;
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    padding:30px;
+}
+.caixascartas .card
+{
+    position:relative;
+    max-width:300px;
+    height:215px;
+    display:flex;
+    flex-direction: column;
+    margin:30px 10px;
+    padding:20px 15px;
+    background:#fff;
+    transition: 0.3s ease-in-out;
+}
+.caixascartas .card .descricao
+{
+    position:relative;
+    visibility: hidden;
+}
+.caixascartas .card:hover .descricao
+{
+    visibility: visible;
+    transition: 0.3s ease-in-out;
+}
+.caixascartas .card:hover
+{
+    height:490px;
+}
+.caixascartas .card .imgBx
+{
+    position:relative;
+    width:260px;
+    height:350px;
+    top:-80px;
+    left:20px;
+}
+.caixascartas .card .imgBx img
+{
+    max-width:90%;
+    border-radius:4px;
+}
+#PORTIFOLIO
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    transition: 0.5s ease-in;
+}
+
+#PORTIFOLIO h2
+{
+    color:#000;
+    background-color: #fff;
+    font-size:30px;
+}
+#PORTIFOLIO div 
+{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top:30px;
+    background-color: #000;
+    margin-left:27%;
+}
+#PORTIFOLIO div h3
+{
+    font-size:20px;
+}
+#opcaoprod
+{
+    margin-left:0;
+    font-size:30px;
+}
+#opcaofotos
+{
+    margin-left:0;
+    font-size:30px;
+}
+#escolha
+{
+    display:inline-block;
+    width:100%;
+    margin-left:0;
+}
+#CONTATOS
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding:10px 10px 20px 20px;
+    background-color: #000;
+    color: #fff;
+    font-size:20px;
+    margin-left:-20%;
+    transition: 0.5s ease-in;
+}
+
+#CONTATOS h2,h3
+{
+    color: #fff;
+    background-color: #000;
+}
+#CONTATOS h2
+{
+    margin-bottom:20px;
+    margin-left:20%;
+}
+footer
+{
+    text-align: center;
+    padding:10px;
+    background-color: #000;
+    color: #fff;
+    margin-top:10%;
+}
+footer a
+{
+    text-decoration: none;
+    color:#fff;
+}
+.slick-slider
+{
+    width: 100%;
+    margin-top:20px;
+} 
+
+@media screen and (min-width: 768px)
+{
+    body
+    {
+        background-color: #000;
+    }
+    nav ul{
+        flex-direction: row;
+        width:70%;
+    }
+    .content
+    {
+        right:0;
+    }
+    header
+    {
+        height:22vh;
+        justify-content: center;
+
+    }
+    #SOBRE
+    {
+        height:250px;
+        height:30vh;
+        justify-content: center;
+        padding:100px;
+        margin-top:3%;
+    }
+    
+    #PORTIFOLIO
+    {
+        flex-direction:row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin: 0 auto;
+        width: 100%;
+    }
+    #PORTIFOLIO h2
+    {
+        text-align: center;
+        width: 100%;
+    }
+    #opcaoprod
+    {
+    margin-left:0;
+    } 
+    #opcaofotos
+    {
+    margin-left:0;
+    }
+    #escolha
+    {
+        display:inline-block;
+        width:100%;
+        margin-left:0!important;
+    }
+    #CONTATOS
+    {
+        
+        justify-content: center;
+        margin-top:7%;
+        display:flex;
+        width:100%;
+        margin-left:-10%;
+    }
+    .form
+    {
+        display:flex;
+        flex-direction:column;
+        margin-left:50%;
+        margin-top:-15%;
+
+    }
+    #CONTATOS img
+    {
+        margin-right:2px;
+    }
+    #fotos
+    {
+        flex-direction: row;
+        flex-wrap:wrap;
+    }
+    #fotos img
+    {
+        width: 33.3333%;
+    }
+    #CONTATOS h2,p
+    {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    body
+    {
+    background-color: #000;
+    }
+    .nav-links
+    {
+        width: 100%;
+        position:relative;
+        background-color:#000;
+        display:flex;
+        flex-direction: column;
+        right:0px;
+        transform:translateX(110%);
+        overflow-x: hidden;
+        transition:transform 0.5s ease-in
+    }
+    #content
+    {
+    position:absolute;
+    padding: 0;
+    text-shadow: #000 1px 1px 1px;
+    font-family:'Oswald';
+    right:0;
+
+    }
+    .burger
+    {
+        display:block;
+        cursor:pointer;
+    }
+    header
+    {
+        height: 40vh;
+    }
+    #PORTIFOLIO div
+    {
+        width:100%;
+        text-align:center;
+        margin-left:0;
+    }
+    #opcaoprod
+    {
+    margin-left:0;
+    } 
+    #opcaofotos
+    {
+    margin-left:0;
+    }
+    #escolha
+    {
+        display:inline-block;
+        width:100%;
+    }
+    #CONTATOS
+    {
+        background-color: #000;
+        margin-left:0;
+    }
+    #CONTATOS h2
+    {
+        margin-left:0;
+    }
+    .form
+    {
+        display:flex;
+        flex-direction:column;
+    }
+}
+
+.nav-active
+{
+    transform: translateX(0%);
+}
+
+.escondido
+{
+    display:none;
+}
